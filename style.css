@@ -1,10 +1,17 @@
 
-
-
+// MainApp.jsx
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import './index.css';
+import App from './App'; // seu componente completo
+import OtherComponent from './OtherComponent'; // outro componente que você quer integrar
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+export default function MainApp() {
+  return (
+    <div className="bg-gray-50">
+      {/* Outro componente acima */}
+      <OtherComponent />
+
+      {/* Seu App */}
+      <App />
+    </div>
+  );
+}
