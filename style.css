@@ -1,17 +1,41 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-// MainApp.jsx
-import React from 'react';
-import App from './App'; // seu componente completo
-import OtherComponent from './OtherComponent'; // outro componente que você quer integrar
+/* Estilo del cuerpo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
 
-export default function MainApp() {
-  return (
-    <div className="bg-gray-50">
-      {/* Outro componente acima */}
-      <OtherComponent />
+/* Encabezado */
+header {
+  background-color: #007BFF;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
 
-      {/* Seu App */}
-      <App />
-    </div>
-  );
+/* Contenedor principal */
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* Botón */
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #218838;
 }
