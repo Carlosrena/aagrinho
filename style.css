@@ -1,0 +1,200 @@
+
+
+import { Sprout, Droplet, Sun, TrendingUp, Leaf, Shield } from 'lucide-react';
+
+export default function App() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50">
+      {/* Hero Section */}
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1757525473930-0b82237e55ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJsZSUyMGFncmljdWx0dXJlJTIwZmFybWluZ3xlbnwxfHx8fDE3Nzc0NjEwNTN8MA&ixlib=rb-4.1.0&q=80&w=1080)'
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
+        </div>
+
+        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
+          <div className="inline-flex items-center gap-2 bg-green-500/20 backdrop-blur-sm border border-green-300/30 rounded-full px-6 py-2 mb-6">
+            <Leaf className="w-5 h-5 text-green-300" />
+            <span className="text-green-100">Futuro Sustentável</span>
+          </div>
+          <h1 className="text-5xl md:text-7xl mb-6 text-white">
+            Agro Forte, Futuro Sustentável
+          </h1>
+          <p className="text-xl md:text-2xl text-green-50 max-w-3xl mx-auto mb-8">
+            Equilibrando produção agrícola e preservação ambiental para as próximas gerações
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full transition-all transform hover:scale-105">
+              Saiba Mais
+            </button>
+            <button className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border border-white/30 px-8 py-4 rounded-full transition-all">
+              Nossas Iniciativas
+            </button>
+          </div>
+        </div>
+
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
+            <div className="w-1.5 h-3 bg-white/70 rounded-full"></div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center p-8 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-green-500 rounded-full mb-4">
+                <TrendingUp className="w-8 h-8 text-white" />
+              </div>
+              <div className="text-4xl mb-2 text-green-700">+35%</div>
+              <p className="text-gray-600">Aumento em Produtividade Sustentável</p>
+            </div>
+
+            <div className="text-center p-8 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-500 rounded-full mb-4">
+                <Droplet className="w-8 h-8 text-white" />
+              </div>
+              <div className="text-4xl mb-2 text-blue-700">-42%</div>
+              <p className="text-gray-600">Redução no Consumo de Água</p>
+            </div>
+
+            <div className="text-center p-8 bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-500 rounded-full mb-4">
+                <Shield className="w-8 h-8 text-white" />
+              </div>
+              <div className="text-4xl mb-2 text-amber-700">100%</div>
+              <p className="text-gray-600">Práticas Regenerativas</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pillars Section */}
+      <section className="py-20 bg-gradient-to-br from-green-900 to-emerald-800 text-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl mb-4">Pilares da Sustentabilidade</h2>
+            <p className="text-xl text-green-100 max-w-2xl mx-auto">
+              Três fundamentos que guiam nossa visão de agricultura do futuro
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all">
+              <Sprout className="w-12 h-12 text-green-300 mb-4" />
+              <h3 className="text-2xl mb-4">Produção Eficiente</h3>
+              <p className="text-green-100 leading-relaxed">
+                Tecnologias avançadas e práticas inovadoras que maximizam a produtividade
+                enquanto minimizam o impacto ambiental.
+              </p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all">
+              <Leaf className="w-12 h-12 text-green-300 mb-4" />
+              <h3 className="text-2xl mb-4">Preservação Ambiental</h3>
+              <p className="text-green-100 leading-relaxed">
+                Compromisso com a biodiversidade, conservação do solo e proteção dos
+                ecossistemas naturais em todas as operações.
+              </p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all">
+              <Sun className="w-12 h-12 text-green-300 mb-4" />
+              <h3 className="text-2xl mb-4">Energia Renovável</h3>
+              <p className="text-green-100 leading-relaxed">
+                Integração de fontes limpas de energia, reduzindo emissões de carbono e
+                promovendo autossuficiência energética.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Image Gallery Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl text-gray-900 mb-4">Na Prática</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Experiências reais de agricultura sustentável ao redor do mundo
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="relative h-80 rounded-2xl overflow-hidden group">
+              <img
+                src="https://images.unsplash.com/photo-1703932892707-96a68172d8ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxzdXN0YWluYWJsZSUyMGFncmljdWx0dXJlJTIwZmFybWluZ3xlbnwxfHx8fDE3Nzc0NjEwNTN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="Campo com turbina eólica"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+                <div>
+                  <h3 className="text-2xl text-white mb-2">Energia Eólica Integrada</h3>
+                  <p className="text-green-200">Agricultura e energia limpa em harmonia</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative h-80 rounded-2xl overflow-hidden group">
+              <img
+                src="https://images.unsplash.com/photo-1721928005280-a5ac7cc2c50d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw0fHxzdXN0YWluYWJsZSUyMGFncmljdWx0dXJlJTIwZmFybWluZ3xlbnwxfHx8fDE3Nzc0NjEwNTN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="Campo verde com montanhas"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+                <div>
+                  <h3 className="text-2xl text-white mb-2">Cultivo Regenerativo</h3>
+                  <p className="text-green-200">Restaurando a saúde do solo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-green-600 to-emerald-600 text-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-4xl md:text-5xl mb-6">
+            Juntos por um Futuro Sustentável
+          </h2>
+          <p className="text-xl text-green-50 mb-8 leading-relaxed">
+            A agricultura forte não compete com o meio ambiente — ela trabalha em harmonia.
+            Descubra como nossas práticas estão transformando o agronegócio brasileiro.
+          </p>
+          <button className="bg-white text-green-600 hover:bg-green-50 px-10 py-4 rounded-full transition-all transform hover:scale-105">
+            Faça Parte da Mudança
+          </button>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-gray-300 py-12">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <Sprout className="w-8 h-8 text-green-500" />
+            <span className="text-2xl text-white">Agro Forte</span>
+          </div>
+          <p className="text-gray-400 mb-6">
+            Construindo o futuro da agricultura sustentável
+          </p>
+          <div className="flex flex-wrap gap-6 justify-center text-sm">
+            <a href="#" className="hover:text-green-400 transition-colors">Sobre Nós</a>
+            <a href="#" className="hover:text-green-400 transition-colors">Projetos</a>
+            <a href="#" className="hover:text-green-400 transition-colors">Tecnologias</a>
+            <a href="#" className="hover:text-green-400 transition-colors">Contato</a>
+          </div>
+          <div className="mt-8 pt-8 border-t border-gray-800 text-sm text-gray-500">
+            © 2026 Agro Forte. Todos os direitos reservados.
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
